@@ -4,6 +4,8 @@ const cors = require('cors')
 
 const app = express();
 app.use(cors({origin:'project5380228.tilda.ws'}))
+app.use(express.urlencoded({extended:true}))
+app.use(express.json());
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -20,7 +22,9 @@ router.get('/test',(req,res) => {
 })
 
 router.post('/newrequest', (req,res) =>{
+    
     console.log(req.body);
+    res.json({status: 'ok'})
 })
 
 router.post('/testpost',(req,res) => {
