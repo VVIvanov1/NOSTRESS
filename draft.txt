@@ -1,0 +1,3 @@
+https://elaborate-banoffee-fec5b7.netlify.app/.netlify/functions/api
+
+https://elaborate-banoffee-fec5b7.netlify.app/.netlify/functions/api/newrequest
