@@ -51,7 +51,7 @@ router.get("/", (req, res) => {
 router.post("/newrequest", async (req, res) => {
   let d = new Date();
   d.setTime(d.getTime() + 6 * 60 * 60 * 1000);
-  let obj = req.body;
+  let obj = JSON.parse(req.body);
   obj.date = d;
 
   let ress = await main(obj);
