@@ -55,8 +55,8 @@ router.post("/newrequest", async (req, res) => {
   obj.date = d;
 
   let ress = await main(obj);
-  console.log(ress);
-  res.json({ status: "ok" });
+  // console.log(ress);
+  res.json(obj);
 });
 
 router.get("/getrequests", async (req, res) => {
