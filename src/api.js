@@ -29,7 +29,15 @@ async function main(obj) {
   );
 
   const Order = mongoose.model("Order", requestSchema);
-  const ord = new Order(obj);
+  const ord = new Order({
+    page: obj.page,
+    url: obj.url,
+    headline: obj.headline,
+    name: obj.name,
+    phone: obj.phone,
+    email: obj.email
+    
+  });
   await ord.save();
 }
 
