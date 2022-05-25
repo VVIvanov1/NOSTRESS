@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>CRM</title>
   </head>
@@ -16,11 +19,10 @@
         <div class="left-header">
           <div class="logo-navbar">
             <a href="#" class="logo">
-            <img src="Vector.svg" />
-          </a>
-          <span>STRESS-LESS CRM</span>
+              <img src="Vector.svg" />
+            </a>
+            <span>STRESS-LESS CRM</span>
           </div>
-          
         </div>
         <div class="change-lang">
           <ul>
@@ -31,19 +33,92 @@
         </div>
         <div class="account">
           <div class="avatar">
-            <img src="avatar.jpg"/>
+            <img src="avatar.jpg" />
           </div>
           <div class="email">meruyert@baigroupkz.com</div>
         </div>
         <div class="security">
           <a href="/login">
-            <img src="account.svg"/>
+            <img src="account.svg" />
             <span>Login</span>
           </a>
         </div>
       </header>
-      <div class="manager">
-        <span><i class="fa-solid fa-rocket-launch"></i>
+
+      <div class="work-area">
+        <section class="left-work-area">
+          <div class="information-panel">
+            <div class="left-work-area-title">
+              <p>Main information</p>
+              <img src="info-circle.svg" />
+            </div>
+            <div class="main-info-row main-digit-color">
+              <p>Today new orders</p>
+              <h4>16</h4>
+            </div>
+            <div class="main-info-row red-digit-color">
+              <p>not at work</p>
+              <h4>6</h4>
+            </div>
+            <div class="main-info-row green-digit-color">
+              <p>Closed orders</p>
+              <h4>215</h4>
+            </div>
+            <div class="main-info-row blue-digit-color">
+              <p>Need review</p>
+              <h4>10</h4>
+            </div>
+          </div>
+          <input type="text" placeholder="Search" class="search-input" />
+        </section>
+        <section class="main-work-area">
+          <div class="manage-panel">
+            <a href="#" class="refresh-btn">
+              <img src="Refresh.svg" />
+            </a>
+            <button class="action-btn">Main</button>
+            <button class="action-btn">My orders</button>
+            <button class="action-btn">New order</button>
+
+            <input
+              type="checkbox"
+              class="checkbox-custom"
+              id="new"
+              name="new"
+            />
+            <label for="new" class="checkbox-label">New orders</label>
+            <input
+              type="checkbox"
+              class="checkbox-custom"
+              id="notassigned"
+              name="notassigned"
+            />
+            <label for="notassigned" class="checkbox-label">Not assigned</label>
+            <a href="#" class="clear-filter">
+              <img src="Filter.svg" />
+            </a>
+          </div>
+          <div class="underline"></div>
+          <div class="orders">
+            <div class="order-card">
+              <div class="order-top">
+                <div class="order-item-info">
+                  <img src="map.svg" class="main-color-icon" />
+                  <p class="main-color-text">United Kingdom</p>
+                </div>
+                <div class="order-item-info">
+                  <img src="user.svg" class="main-color-icon" />
+                  <p class="grey-color-text">Brooklin Simon</p>
+                </div>
+                <div class="order-item-info">
+                  <img src="phone.svg" class="main-color-icon" />
+                  <p class="grey-color-text">(302) 555-0107</p>
+                </div>
+              </div>
+              <div class="order-buttom"></div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </body>
